@@ -1,5 +1,5 @@
 
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 import ButtonComponent from '../Components/ButtonComponent';
 
@@ -14,7 +14,14 @@ const increment = () => {
 const decrement = () => {
   setCount((prev) => prev - 1);
 };
-  
+
+useEffect(() => {
+  if(count % 2 === 0){
+  alert("This is an even number")
+}
+  //the empty array makes it render at the first render
+}, [count]);
+
   return (
     <div>
       <h1>App counter</h1>
