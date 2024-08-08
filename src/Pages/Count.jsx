@@ -15,7 +15,9 @@ const decrement = () => {
   setCount((prev) => prev - 1);
 };
 
+// use effect
 useEffect(() => {
+
   if(count % 2 === 0){
   alert("This is an even number")
 }

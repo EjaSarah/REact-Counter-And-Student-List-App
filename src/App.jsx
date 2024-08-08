@@ -1,22 +1,18 @@
-// import { useState } from "react";
+
 import "./App.css";
-import Count from "./Pages/Count";
-// import Students from "./Pages/Students";
+import Cats from "./Pages/Cats";
+
+
 
 
 const App = () => {
   return(
+    <>
     <div>
-      <Count />
-      {/* <Students /> */}
-      </div>
-  );
-};
-
-
-
+      <Cats />
+    </div>
+    </>
+  )
+}
 
 export default App;
-
-
-
